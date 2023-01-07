@@ -8,7 +8,7 @@
             while(flag)
             {
                 Console.WriteLine("Welcome to Basic Core Programs");
-                Console.WriteLine("1: Flip Coin" + "\n" + "2: Leap Year" + "\n" + "3: Exit");
+                Console.WriteLine("1: Flip Coin" + "\n" + "2: Leap Year" + "\n" +  "3: Power of 2" + "\n"+"4: Exit");
                 int check = Convert.ToInt32(Console.ReadLine());
                 switch(check)
                 {
@@ -19,7 +19,11 @@
                         case 2:
                             LeapYear year = new LeapYear(); 
                         year.CheckLeapYear();
-                        break; 
+                        break;
+                        case 3:
+                            PowerOf2 power = new PowerOf2();
+                        power.Power();
+                        break;
                         default: break;
                         flag= false;
                         break;
