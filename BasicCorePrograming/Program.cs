@@ -8,7 +8,8 @@
             while(flag)
             {
                 Console.WriteLine("Welcome to Basic Core Programs");
-                Console.WriteLine("1: Flip Coin" + "\n" + "2: Leap Year" + "\n" +  "3: Power of 2" + "\n"+ "4: Harmonic Number" +"\n"+"5: Exit");
+                Console.WriteLine("1: Flip Coin" + "\n" + "2: Leap Year" + "\n" + 
+                    "3: Power of 2" + "\n"+ "4: Harmonic Number" +"\n"+"5: Factors" +"\n"+ "6: Exit");
                 int check = Convert.ToInt32(Console.ReadLine());
                 switch(check)
                 {
@@ -27,6 +28,10 @@
                         case 4:
                             HarmonicNmber harmonic = new HarmonicNmber();
                             harmonic.Harmonic();
+                        break;
+                        case 5:
+                            Factors factors= new Factors();
+                        factors.PrimeFactor();
                         break;
                         default: break;
                         flag= false;
