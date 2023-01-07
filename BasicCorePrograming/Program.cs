@@ -9,7 +9,7 @@
             {
                 Console.WriteLine("Welcome to Basic Core Programs");
                 Console.WriteLine("1: Flip Coin" + "\n" + "2: Leap Year" + "\n" + 
-                    "3: Power of 2" + "\n"+ "4: Harmonic Number" +"\n"+"5: Factors" +"\n"+ "6: Check Even/Odd" +"\n"+ "7: Exit");
+                    "3: Power of 2" + "\n"+ "4: Harmonic Number" +"\n"+"5: Factors" +"\n"+ "6: Check Even/Odd" +"\n"+ "7: Vowel/Consonant" +"\n"+ "8: Exit");
                 int check = Convert.ToInt32(Console.ReadLine());
                 switch(check)
                 {
@@ -36,6 +36,10 @@
                         case 6:
                             EvenOdd eo = new EvenOdd(); 
                         eo.CheckEvenOdd();
+                        break;
+                        case 7:
+                            VowelConsonanat ab = new VowelConsonanat();
+                        ab.Alphabet();
                         break;
                         default: break;
                         flag= false;
