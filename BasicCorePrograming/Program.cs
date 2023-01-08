@@ -10,7 +10,8 @@
                 Console.WriteLine("Welcome to Basic Core Programs");
                 Console.WriteLine("1: Flip Coin" + "\n" + "2: Leap Year" + "\n" + 
                     "3: Power of 2" + "\n"+ "4: Harmonic Number" +"\n"+"5: Factors" +"\n"+ 
-                    "6: Check Even/Odd" +"\n"+ "7: Vowel/Consonant" +"\n"+ "8: Quotient and Remainder" +"\n"+ "9: Exit");
+                    "6: Check Even/Odd" +"\n"+ "7: Vowel/Consonant" +"\n"+ "8: Quotient and Remainder" +"\n"+
+                    "9: Swap two numbers : " +"\n"+ "10: Exit");
                 int check = Convert.ToInt32(Console.ReadLine());
                 switch(check)
                 {
@@ -45,6 +46,10 @@
                         case 8:
                             QuoandRem qr = new QuoandRem();
                         qr.QuoRem();
+                        break;
+                        case 9:
+                            SwapTwoNumbers sn = new SwapTwoNumbers();   
+                        sn.SwapNum();
                         break;
                         default: break;
                         flag= false;
